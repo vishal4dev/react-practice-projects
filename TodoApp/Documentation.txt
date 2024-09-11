@@ -1,0 +1,65 @@
+now lets come to the logic what did i learn or lets say what did you teach me apart from styling using bootstrap, how did you come about the logic
+
+Key Concepts Covered:
+
+React State Management (useState)
+---------------------------------
+we used the useState hook to manage the state of the app.
+
+We have two pieces of state: tasks and task.
+
+tasks is an array that stores the list of tasks the user adds.
+
+task holds the current value entered in the input field.
+
+const [tasks, setTasks] = useState([]);
+const [task, setTask] = useState("");
+
+
+-------------------------------------
+Handling Form Inputs
+
+In the app, you learned how to capture user input from a text field and store it in the component’s state. This was done with the onChange event handler
+
+<input
+  type="text"
+  className="form-control"
+  placeholder="Enter a task"
+  value={task}
+  onChange={(e) => setTask(e.target.value)}
+/>
+
+What did you learn?
+
+How to listen to user input via event handlers.
+How to capture and update the input value using onChange and state.
+
+--------------------
+Rendering Lists Dynamically
+
+What did you learn?
+
+How to render lists dynamically in React.
+How to use the map() function to loop over arrays and generate JSX elements.
+---------------------------------------
+
+Handling Events (Adding and deleting tasks)
+
+Adding
+How does it work?
+
+setTasks([...tasks, task]) adds the new task to the array without modifying the original array (tasks), ensuring immutability.
+setTask("") resets the input field to an empty string after the task is added.
+
+deleting
+
+(_, i) => i !== index
+The callback function has two parameters:
+
+The first parameter (_) represents the current task in the array, but since it's not used in this case, it's named _ to indicate it's ignored.
+The second parameter (i) is the index of the current task in the array.
+What is this doing?
+
+The callback checks if the index i of the current task is not equal to the index of the task we want to delete.
+If i !== index is true, the task will be included in the new array.
+If i === index is false (i.e., it's the task to be deleted), that task will not be included in the new array.

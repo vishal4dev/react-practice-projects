@@ -1,0 +1,9 @@
+->basic initialization of project
+->installed sass for first time 
+  ass (Syntactically Awesome Stylesheets) is a preprocessor scripting language that is compiled into CSS (Cascading Style Sheets)
+
+  Sass adds functionality like variables, nesting, and mixins, which are not available in pure CSS.
+
+    Sass needs to be compiled: The .scss or .sass files are not directly understood by browsers. You need a Sass compiler to convert them into regular .css files.
+
+    
