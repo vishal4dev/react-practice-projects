@@ -6,4 +6,4 @@
 
     Sass needs to be compiled: The .scss or .sass files are not directly understood by browsers. You need a Sass compiler to convert them into regular .css files.
 
-    
+->installing react-router-hash-link : this will help us achive functionality of both a Link frm react router dom and anchor tag of common html with a hashtag that will help in smooth scrolling    
