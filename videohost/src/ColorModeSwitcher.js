@@ -27,3 +27,5 @@ export default ColorModeSwitcher;
 // top={'4'}
 // right={'4'}
 // the above css sends the button to the top right corner of the screen
+
+// zIndex={'overlay'} : this css property is used to make the button always on top of the screen
